@@ -1,0 +1,299 @@
+
+
+.my-container {
+    height: 600px;
+}
+
+.justifiedlayout .item {
+    opacity: 1;
+}
+
+.justifiedlayout .item .thumbnail {
+    overflow: hidden;
+}
+
+.justifiedlayout .item .thumbnail img {
+    width: 100%;
+}
+
+.justifiedlayout .item .info {
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    bottom: 0;
+    left: 0;
+    line-height: 20px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    text-align: left;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity ease 0.2s;
+}
+
+.justifiedlayout .item:hover .info {
+    opacity: 1;
+}
+
+.item.animate {
+    transition: opacity ease 1s;
+    transition-delay: 0.2s;
+    opacity: 1;
+}
+
+
+.justifiedlayout .loading {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    display: none;
+}
+
+
+.justifiedlayout .loading span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.justifiedlayout.horizontal .loading {
+    width: 200px;
+    height: 100%;
+}
+
+
+
+/* Justified Layout End */
+
+
+.my-container {
+    width: 100%;
+    height: 600px;
+}
+
+.gridlayout .item {
+    display: inline-block;
+    width: 550px;
+    opacity: 1;
+}
+
+.gridlayout .item .thumbnail {
+    max-height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.gridlayout .item .thumbnail img {
+    width: 100%;
+    /* border-radius: 8px; */
+}
+
+.gridlayout .item .info {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #777;
+}
+
+/* .gridlayout.horizontal .item {
+    width: auto;
+    height: 250px;
+} */
+
+
+/* .gridlayout.equal .item .thumbnail {
+    height: 140px;
+}
+.gridlayout.equal.horizontal .item .thumbnail {
+    height: auto;
+    width: 140px;
+} */
+
+
+
+/* .gridlayout.horizontal .item .thumbnail img {
+    width: auto;
+    height: 210px;
+} */
+
+/* .gridlayout .item.animate {
+    transition: opacity ease 1s;
+    transition-delay: 0.2s;
+    opacity: 1;
+} */
+
+/* .gridlayout .loading {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    display: none;
+}
+.gridlayout .loading span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+} */
+
+/* .gridlayout.horizontal .loading {
+    width: 200px;
+    height: 100%;
+} */
+
+
+
+
+.my-container {
+	max-width: 1400px;
+	margin: 0px auto;	
+}
+
+.squarelayout .item {
+    position: absolute;
+    opacity: 1;
+    width: 200px;
+    overflow: hidden;
+}
+
+.squarelayout .item .thumbnail {
+    overflow: hidden;
+    object-fit: contain;
+}
+
+.squarelayout .item .thumbnail img {
+    min-width: 100%;
+    min-height: 100%;
+    max-width:  200%;
+    max-height: 200%;
+}
+
+.squarelayout .item .info {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    bottom: 0;
+    left: 0;
+    line-height: 20px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    text-align: left;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity ease 0.2s;
+}
+
+.squarelayout .item:hover .info {
+    opacity: 1;
+}
+
+.item.animate {
+    transition: opacity ease 1s;
+    transition-delay: 0.2s;
+    opacity: 1;
+}
+
+
+.squarelayout .loading {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    display: none;
+}
+.squarelayout .loading span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.squarelayout.horizontal .loading {
+    width: 200px;
+    height: 100%;
+}
+
+
+
+
+/* Image Tooltip */
+
+.tooltip {
+    text-decoration:none;
+    position:relative;
+  }
+   
+  .tooltip span {
+    display:none;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    color:black;
+    background:white; 
+  }
+   
+  .tooltip span img {
+    float:left;
+    margin:0px 8px 8px 0;
+  }
+   
+  .tooltip:hover span {
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1000;
+    width:auto;
+    max-width:320px;
+    min-height:128px;
+    border:1px solid black;
+    margin-top:12px;
+    margin-left:32px;
+    overflow:hidden;
+    padding:8px;
+  }
+
+
+
+  /* Icons */
+
+  .lni {
+      font-size: 20px;
+      color: tomato;
+  }
+
+  .image-protect {
+      pointer-events: none;
+  }
+
+
+  .license-info {
+    background-color: #e7f3fe;
+    border-left: 6px solid #2196F3;
+    padding: 10px 0px 2px 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+
+  #license-description {
+    display: none;
+  }
+
+  #license-description h2 {
+    text-align: center;
+    font-size: 25px;
+  }
+
+
+  
